@@ -9,6 +9,7 @@
 }
 
 body {
+  background: #ffffff;
   font-family: var(--primary-font);
   color: var(--primary-text-color-theme-dark);
   letter-spacing: 0.03em;
@@ -42,7 +43,7 @@ button {
   color: #000000;
 }
 
-.menu-link {
+.menu .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -50,13 +51,16 @@ button {
   color: var(--primary-text-color-theme-dark);
 }
 
-.menu-link:hover,
-.menu-link:focus,
+.menu .link:hover,
+.menu .link:focus,
 .contacts-page:hover,
 .contacts-page:focus,
 .contacts-foot:hover,
 .contacts-foot:focus,
-.menu-link:active{
+.menu-link:active {
+  color: var(--accent-color);
+}
+.menu .link.current {
   color: var(--accent-color);
 }
 .contacts-page {
@@ -162,13 +166,45 @@ button {
   color: #ffffff;
 }
 .address {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color-theme-light);
 }
 .contacts-foot {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color-theme-light);
 }
 
+/*---portfolio---*/
+
+.portfolio-buttons {
+  background: #f5f4fa;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: inherit;
+  color: var(--primary-text-color-theme-dark);
+}
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  background: var(--accent-color);
+  color: var(--primary-text-color-theme-light);
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-dark);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color-theme-dark);
+}
